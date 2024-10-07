@@ -30,17 +30,14 @@ const itemVariants = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-24 bg-white relative overflow-hidden">
-      <Parallax speed={-10}>
-        <div className="absolute inset-0 bg-gradient-to-br from-apple-gray-100 to-apple-gray-200 opacity-50" />
-      </Parallax>
+    <section id="skills" className="py-24 relative">
       <div className="container mx-auto px-4 relative z-10">
         <Parallax speed={10}>
           <motion.h2 
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="text-3xl font-bold text-center mb-12 text-apple-gray-900"
+            className="text-3xl font-bold text-center mb-12 text-black"
           >
             Tech Stack
           </motion.h2>

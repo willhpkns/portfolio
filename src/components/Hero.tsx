@@ -5,21 +5,14 @@ import { Parallax } from 'react-scroll-parallax';
 
 const Hero = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <Parallax speed={-20}>
-        <div className="absolute inset-0 bg-gradient-to-br from-apple-gray-800 to-apple-gray-900 opacity-90" />
-      </Parallax>
-      <Parallax speed={-10} className="absolute right-0 bottom-0">
-        <div className="w-96 h-96 bg-apple-gray-700 rounded-full opacity-20 transform translate-x-1/2 translate-y-1/2" />
-      </Parallax>
-      <div className="container mx-auto px-4 text-center relative z-10">
+    <section className="relative min-h-[200vh] flex flex-col justify-start items-center overflow-hidden">
+      <div className="container mx-auto px-4 text-center relative z-10 mt-[30vh]">
         <Parallax speed={2}>
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
-            className="text-5xl md:text-6xl font-bold mb-4 text-black
-          "
+            className="text-5xl md:text-6xl font-bold mb-4 text-black"
           >
             Will Hopkins
           </motion.h1>
@@ -29,7 +22,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-            className="text-xl md:text-2xl text-apple-gray-300 mb-8"
+            className="text-xl md:text-2xl text-[#E0C4B0] mb-8"
           >
             Software Engineer
           </motion.p>
@@ -39,7 +32,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="text-lg max-w-2xl mx-auto text-apple-gray-400 mb-12 leading-relaxed"
+            className="text-lg max-w-2xl mx-auto text-[#D2B48C] mb-12 leading-relaxed"
           >
             I like big butts and I cannot lie.
           </motion.p>
@@ -61,7 +54,7 @@ const Hero = () => {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-apple-gray-400 hover:text-gray-900 transition-colors duration-100"
+                className="text-[#C19A6B] hover:text-white transition-colors duration-300"
                 whileHover={{ scale: 1.5 }}
                 whileTap={{ scale: 0.9 }}
               >
@@ -71,6 +64,17 @@ const Hero = () => {
           </motion.div>
         </Parallax>
       </div>
+
+      <Parallax speed={-5} className="mt-[50vh] text-center">
+        <motion.p
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8, ease: 'easeOut' }}
+          className="text-2xl text-[#E0C4B0]"
+        >
+          Scroll down to explore my work
+        </motion.p>
+      </Parallax>
     </section>
   );
 };
