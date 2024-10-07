@@ -3,8 +3,7 @@ import { motion } from 'framer-motion'
 import { Parallax } from 'react-scroll-parallax'
 
 const skills = [
-  'JavaScript', 'TypeScript', 'React', 'Node.js', 'Express', 'MongoDB',
-  'SQL', 'Git', 'Docker', 'AWS', 'GraphQL', 'TailwindCSS'
+  'Python', 'Playwright', 'SQL', 'MongoDB'
 ]
 
 const containerVariants = {
@@ -24,7 +23,7 @@ const itemVariants = {
     y: 0,
     transition: {
       type: "spring",
-      stiffness: 100
+      stiffness: 10
     }
   }
 }
@@ -36,14 +35,14 @@ const Skills = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-apple-gray-100 to-apple-gray-200 opacity-50" />
       </Parallax>
       <div className="container mx-auto px-4 relative z-10">
-        <Parallax speed={5}>
+        <Parallax speed={10}>
           <motion.h2 
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-3xl font-bold text-center mb-12 text-apple-gray-900"
           >
-            Skills
+            Tech Stack
           </motion.h2>
         </Parallax>
         <Parallax speed={10}>

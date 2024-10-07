@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="w-96 h-96 bg-apple-gray-700 rounded-full opacity-20 transform translate-x-1/2 translate-y-1/2" />
       </Parallax>
       <div className="container mx-auto px-4 text-center relative z-10">
-        <Parallax speed={-1}>
+        <Parallax speed={2}>
           <motion.h1
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ const Hero = () => {
             Software Engineer
           </motion.p>
         </Parallax>
-        <Parallax speed={5}>
+        <Parallax speed={8}>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -44,7 +44,7 @@ const Hero = () => {
             I like big butts and I cannot lie.
           </motion.p>
         </Parallax>
-        <Parallax speed={6}>
+        <Parallax speed={8}>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -61,8 +61,8 @@ const Hero = () => {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-apple-gray-400 hover:text-white transition-colors duration-300"
-                whileHover={{ scale: 1.2 }}
+                className="text-apple-gray-400 hover:text-gray-900 transition-colors duration-100"
+                whileHover={{ scale: 1.5 }}
                 whileTap={{ scale: 0.9 }}
               >
                 <Icon size={28} />
